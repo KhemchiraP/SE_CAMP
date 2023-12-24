@@ -1,12 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
 </head>
+
 <body>
-    uhuhuhtvtvtv
-    <h1>Hello</h1>
+    <?php $multi_x = 12; ?>
+    <h1>ตารางสูตรคูณแม่ <?php echo $multi_x ?></h1>
+    <table>
+        <tbody>
+            <?php
+            for( $i=1; $i<=24; $i++ ) {
+                echo "<tr>";
+                echo "<td>" . $multi_x . " x {$i} = " . ($multi_x * $i) . "</td>";
+                echo "</tr>";
+                 
+            }
+        ?>
+        </tbody>
+    </table>
+    <style>
+        table{
+          width:150px; 
+          height:80px;  
+          overflow: scroll;
+        }
+    </style>
 </body>
+
 </html>
