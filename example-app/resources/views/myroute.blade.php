@@ -15,19 +15,16 @@
         }
         h1 {
             text-align: center;
-            margin-bottom: 10px;
-        }
+            margin-bottom: 10px;}
         </style>
     </head>
     <body>
-        <h1>My Route Page</h1>
+        <h1>Multiplication Table Results</h1>
         <?php
         for ($i=1; $i<=24; $i++) {
             echo "<p>";
             echo "<td>" . $myinput . " x {$i} = " . ($myinput * $i) . "</td>";
             echo "</p>";
-        }
-        ?>
+        } ?>
     </body>
 </html>
-
