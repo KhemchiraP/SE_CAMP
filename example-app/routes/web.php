@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,16 +19,19 @@ Route::namespace('App\Http\Controllers')->group(function(){
     Route::get('/my-controller2','Mycontroller@index');
 });
 Route::resource('/my-controller3', MyController::class);
-Route::get('articles/create', 'ArticleController@create');
+
 
 Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/my-route',function(){
 
-    $data=['val_a'=>'Hello World','val_b' => 'Laravel'];
+    $data=['val_a'=>'Hello World'];
+    $data['val_b']="Laravel";
     return view('mypage',$data);
 });
 Route::post('/my-route',function(Request $req){
-    return view('myroute');
+    $data['myinput'] = $req->input('myinput');
+    return view('myroute',$data);
+
 });
