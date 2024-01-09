@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,10 +13,22 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/my-controller1',[MyController::class,'index'] );
+Route::get('/my-controller', 'App\Http\Controllers\MyController@index');
+Route::namespace('App\Http\Controllers')->group(function(){
+    Route::get('/my-controller2','Mycontroller@index');
+});
+Route::resource('/my-controller3', MyController::class);
+Route::get('articles/create', 'ArticleController@create');
 
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/my-route', function () {
-    echo "<h1>My Route Page</h1>";
+Route::get('/my-route',function(){
+
+    $data=['val_a'=>'Hello World','val_b' => 'Laravel'];
+    return view('mypage',$data);
+});
+Route::post('/my-route',function(Request $req){
+    return view('myroute');
 });
