@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MyController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
@@ -20,7 +21,7 @@ Route::namespace('App\Http\Controllers')->group(function(){
 });
 Route::resource('/my-controller3', MyController::class);
 
-
+Route::get('/my-controller',[MyController::class,'index']);
 Route::get('/', function () {
     return view('welcome');
 });
