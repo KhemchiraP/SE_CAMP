@@ -18,6 +18,10 @@
                   <input type="lastname" class="form-control" id="inputLastName">
                 </div>
                 <div class="form-group">
+                    <label for="exampleInputDate">วัน/เดือน/ปีเกิด</label>
+                    <input type="date" class="form-control" id="exampleInputDate" placeholder="dd/mm/yyyy">
+                </div>
+                <div class="form-group">
                     <label for="inputAge">อายุ</label>
                     <input type="age" class="form-control" id="inputAge">
                   </div>
@@ -33,7 +37,7 @@
                         </div>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputFile">File input</label>
+                    <label for="exampleInputFile">รูป</label>
                     <div class="input-group">
                       <div class="custom-file">
                         <input type="file" class="custom-file-input" id="exampleInputFile">
