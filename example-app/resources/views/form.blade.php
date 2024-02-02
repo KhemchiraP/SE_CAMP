@@ -87,7 +87,8 @@
 
 
               <div class="card-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-info">Reset</button>
+                  <button type="submit" class="btn btn-default float-right btn btn-info">Submit</button>
               </div>
             </form>
           </div>
