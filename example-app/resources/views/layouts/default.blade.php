@@ -223,6 +223,12 @@
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="login" class="nav-link" onclick="logout_process()">
+                <i class="fas fa-circle nav-icon"></i>
+                <p>Log Out</p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
