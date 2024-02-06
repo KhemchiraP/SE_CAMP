@@ -224,11 +224,21 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="login" class="nav-link" onclick="logout_process()">
-                <i class="fas fa-circle nav-icon"></i>
-                <p>Log Out</p>
+            <a href="logout" class="nav-link">
+              <i class="fas fa-sign-out-alt"></i>
+              <p>
+                Log out
+              </p>
             </a>
           </li>
+          <!--<li class="nav-item">
+            <form method="post" onsubmit="return confirm('คุณแน่ใจหรือไม่ที่ต้องการออกจากระบบ?');">
+                <button type="submit" name="confirm_logout" class="nav-link" style="border: none; background: none; cursor: pointer;">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <p>Log Out</p>
+                </button>
+            </form>
+          </li> -->
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
