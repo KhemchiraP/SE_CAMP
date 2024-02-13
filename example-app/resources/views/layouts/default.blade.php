@@ -231,14 +231,14 @@
               </p>
             </a>
           </li>
-          <!--<li class="nav-item">
+          {{-- <li class="nav-item">
             <form method="post" onsubmit="return confirm('คุณแน่ใจหรือไม่ที่ต้องการออกจากระบบ?');">
                 <button type="submit" name="confirm_logout" class="nav-link" style="border: none; background: none; cursor: pointer;">
                     <i class="fas fa-sign-out-alt"></i>
                     <p>Log Out</p>
                 </button>
             </form>
-          </li> -->
+          </li> --}}
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
